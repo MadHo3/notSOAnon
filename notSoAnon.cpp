@@ -2,6 +2,13 @@
 #include <fstream>
 #include <string>
 using namespace std;
+
+void editData(string &base64Code)
+{
+    base64Code.erase(0, 20);
+    base64Code.pop_back();
+}
+
 int main()
 {
     string data;
@@ -18,6 +25,7 @@ int main()
     {
         if (data.find("dataBase64") != string::npos)
         {
+            editData(data);
             cout << data << endl;
         }
     }
