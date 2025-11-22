@@ -18,15 +18,12 @@ void decodeBase64(string &code) {
   string main64 =
       "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/";
   vector<char> arr;
-
-  // شمارش '='
   int padding = 0;
   if (!code.empty() && code.back() == '=')
     padding++;
   if (code.size() > 1 && code[code.size() - 2] == '=')
     padding++;
 
-  // ساختن 6-bit ها
   for (int i = 0; i < code.length(); i++) {
     if (code[i] == '=')
       break;
@@ -40,13 +37,12 @@ void decodeBase64(string &code) {
     }
   }
 
-  // حذف بیت‌های padding (کمترین تغییر)
   if (padding == 1 && arr.size() >= 2)
     arr.resize(arr.size() - 2);
   else if (padding == 2 && arr.size() >= 4)
     arr.resize(arr.size() - 4);
 
-  // تبدیل 8 بیت به کاراکتر — با چک برای جلوگیری از کرش
+ 
   for (int i = 0; i + 7 < arr.size(); i += 8) {
     string wholeByte = "";
     for (int j = 0; j < 8; j++)
