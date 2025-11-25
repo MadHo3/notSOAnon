@@ -47,3 +47,8 @@ It simply reads the data YOU exported from your own device.
 
 
 5. Confirm export
+
+---
+## 🎥 Demo Video
+
+<video src="https://github.com/MadHo3/notSOAnon/releases/download/v1.0.0/test.mp4" controls width="600"></video>
