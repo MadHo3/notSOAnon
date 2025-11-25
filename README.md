@@ -50,4 +50,4 @@ It simply reads the data YOU exported from your own device.
 
 ---
 ## 🎥 Demo Video
-https://github.com/MadHo3/notSOAnon/releases/download/v1.0.0/test.mp4
+[Demo](https://github.com/user-attachments/assets/a585bcb1-1456-46e3-9450-e0a6f06b8578)
