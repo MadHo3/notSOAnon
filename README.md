@@ -51,4 +51,4 @@ It simply reads the data YOU exported from your own device.
 ---
 ## 🎥 Demo Video
 
-<video src="https://github.com/MadHo3/notSOAnon/releases/download/v1.0.0/test.mp4" controls width="600"></video>
+<video src="https://github.com/MadHo3/notSOAnon/releases/download/v1.0.0/InShot_20251125_122622116.mp4" controls width="600"></video>
