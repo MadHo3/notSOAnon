@@ -33,7 +33,7 @@ void decodeBase64(string &code)
             }
         }
     }
-    for (int i = 0; i < arr.size(); i += 8)
+    for (int i = 0; i + 7 < arr.size(); i += 8)
     {
         string wholeByte = "";
         for (int j = 0; j < 8; j++)
